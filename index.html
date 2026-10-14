@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fandom — Portal de fãs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand-small" href="#" aria-label="Fandom início">Fand<span>♥</span>m</a>
+    <div class="top-actions">
+      <label class="top-search"><span aria-hidden="true">⌕</span><input id="topSearch" placeholder="Pesquisar" autocomplete="off"></label>
+      <button class="outline-btn" id="loginBtn">ENTRAR</button>
+      <button class="solid-btn" id="signupBtn">CRIAR UMA CONTA GRATUITA</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" aria-label="Navegação">
+    <a href="#inicio"><span>⌂</span>Início</a>
+    <a href="#salvos"><span>▱</span>Salvos</a>
+    <a href="#progresso"><span>◉</span>Acompanhamento<br> de progresso</a>
+    <a href="#utilitarios"><span>✣</span>Utilitários</a>
+    <div class="sidebar-bottom"><a href="#config"><span>⚙</span>Configurações</a><a href="#mais"><span>•••</span>Mais</a></div>
+  </aside>
+
+  <main id="inicio">
+    <div class="ad-space"><span>PUBLICIDADE</span></div>
+
+    <section class="hero">
+      <div class="decor decor-one"></div><div class="decor decor-two"></div>
+      <div class="hero-content">
+        <div class="brand-large">Fand<span>♥</span>m</div>
+        <form id="searchForm" class="main-search">
+          <input id="mainSearch" placeholder="Pesquisar na maior plataforma de wikis de fãs do mundo" aria-label="Pesquisar wikis">
+          <button aria-label="Pesquisar" type="submit">⌕</button>
+        </form>
+        <p id="searchMessage" class="search-message" aria-live="polite"></p>
+        <div class="news-cards" id="newsCards">
+          <article class="news-card" data-search="gta 6 games rockstar"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=500&q=80" alt="Jogadores em evento de games"><span class="tag">GAMES</span><h3>GTA 6 Will Reportedly Come To PC Much Earlier Than Expected</h3></article>
+          <article class="news-card" data-search="gamespot review games"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=500&q=80" alt="Videogame retrô"><span class="tag">GAMES</span><h3>Every GameSpot 10/10 Review Score</h3></article>
+          <article class="news-card" data-search="castlevania games series"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&q=80" alt="Jogo com cenário fantástico"><span class="tag">GAMES</span><h3>Castlevania: Belmont's Curse Is The Series At Its Best</h3></article>
+          <article class="news-card" data-search="valor mortis action game"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&q=80" alt="Paisagem de fantasia"><span class="tag">GAMES</span><h3>Valor Mortis Is A First-Person Soulslike That Tries Too Much</h3></article>
+          <article class="news-card" data-search="tv visionquest marvel"><img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=500&q=80" alt="Sala de cinema"><span class="tag">TV</span><h3>Paul Bettany and James Spader on Reuniting Vision and Ultron for VisionQuest</h3></article>
+          <article class="news-card" data-search="avatar seven havens anime"><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=500&q=80" alt="Arte de animação"><span class="tag">TV</span><h3>Avatar: Seven Havens Review: A Triumphant Return for the Last Airbender</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <nav class="wiki-strip" aria-label="Wikis populares">
+      <a class="popular-button" href="#populares">▣ PRINCIPAIS<br>WIKIS</a>
+      <div class="wiki-group"><strong>GAMES</strong><a href="#terraria">Terraria</a><a href="#minecraft">Minecraft</a><a href="#genshin">Genshin Impact</a></div>
+      <div class="wiki-group"><strong>MOVIES</strong><a href="#starwars">Star Wars</a><a href="#harrypotter">Harry Potter</a><a href="#marvel">Marvel</a></div>
+      <div class="wiki-group"><strong>TV</strong><a href="#memoryalpha">Memory Alpha</a><a href="#arrowverse">Arrowverse</a><a href="#spongebob">SpongeBobia</a></div>
+      <div class="wiki-group"><strong>ANIME</strong><a href="#onepiece">One Piece</a><a href="#naruto">Naruto</a><a href="#mha">My Hero Academia</a></div>
+      <p>Além disso, mais de<br><b>250,000</b> para explorar</p><a class="next-arrow" href="#populares" aria-label="Ver mais">→</a>
+    </nav>
+
+    <section class="catalog" id="populares">
+      <div class="section-heading"><h2>MOVIES</h2><button class="show-all" type="button">VER TODOS ▸</button></div>
+      <h3 class="subheading">Páginas wiki populares em Movies</h3>
+      <div class="wiki-grid">
+        <a class="wiki-tile" href="#harrypotter" data-name="Harry Potter"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80" alt="Cenário de fantasia"><span>Harry Potter</span><small>Harry Potter Wiki</small></a>
+        <a class="wiki-tile" href="#matrix" data-name="Neo Matrix"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=400&q=80" alt="Paisagem noturna"><span>Neo</span><small>Matrix Wiki</small></a>
+        <a class="wiki-tile" href="#harleyquinn" data-name="Harley Quinn"><img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=400&q=80" alt="Arte colorida"><span>Harley Quinn</span><small>DC Extended Universe</small></a>
+        <a class="wiki-tile" href="#snakeeyes" data-name="Snake Eyes"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80" alt="Cena de ação"><span>Snake Eyes</span><small>G.I. Joe Wiki</small></a>
+        <a class="wiki-tile" href="#princesses" data-name="Disney Princesses"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Praia de fantasia"><span>Disney Princesses</span><small>Disney Wiki</small></a>
+        <a class="wiki-tile" href="#godzilla" data-name="Godzilla"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80" alt="Paisagem dramática"><span>Godzilla</span><small>Monster Verse Wiki</small></a>
+      </div>
+      <h3 class="subheading">Top News Stories in movies</h3>
+      <div class="feature-news">
+        <article class="feature-card news-card" data-search="resident evil movie games horror"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80" alt="Cena cinematográfica"><span class="tag">GameSpot · Sep 16</span><h3>Resident Evil Finally Captures The Breathless Terror Of The Games</h3><p>Zach Cregger traz uma nova visão de terror e suspense para os fãs da série.</p></article>
+      </div>
+      <p class="empty-state" hidden>Nenhum resultado encontrado. Tente outra pesquisa.</p>
+    </section>
+
+    <section class="catalog category-catalog" id="games">
+      <div class="section-heading"><h2>GAMES</h2><button class="show-all" type="button">VER TODOS ▸</button></div>
+      <h3 class="subheading">Páginas wiki populares em Games</h3>
+      <div class="wiki-grid">
+        <a class="wiki-tile" href="#ellie" data-name="Ellie The Last of Us"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" alt="Personagem em jogo"><span>Ellie</span><small>The Last of Us Wiki</small></a>
+        <a class="wiki-tile" href="#lara" data-name="Lara Croft Tomb Raider"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=400&q=80" alt="Aventura em jogo"><span>Lara Croft</span><small>Tomb Raider Wiki</small></a>
+        <a class="wiki-tile" href="#nathan" data-name="Nathan Drake Uncharted"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80" alt="Videogame"><span>Nathan Drake</span><small>Uncharted Wiki</small></a>
+        <a class="wiki-tile" href="#link" data-name="Link Zelda"><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=400&q=80" alt="Arte de fantasia"><span>Link</span><small>Zelda Wiki</small></a>
+        <a class="wiki-tile" href="#pikachu" data-name="Pikachu Pokemon"><img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=400&q=80" alt="Arte digital colorida"><span>Pikachu</span><small>Pokémon Wiki</small></a>
+        <a class="wiki-tile" href="#rathalos" data-name="Rathalos Monster Hunter"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80" alt="Criatura fantástica"><span>Rathalos</span><small>Monster Hunter Wiki</small></a>
+        <a class="wiki-tile" href="#mileena" data-name="Mileena Mortal Kombat"><img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=400&q=80" alt="Arte de personagem"><span>Mileena</span><small>Mortal Kombat Wiki</small></a>
+        <a class="wiki-tile" href="#miles" data-name="Miles Morales Spider-Man"><img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=400&q=80" alt="Cidade iluminada"><span>Miles Morales</span><small>Spider-Man Wiki</small></a>
+      </div>
+      <h3 class="subheading">Top News Stories in games</h3>
+      <div class="news-cards lower-news">
+        <article class="news-card" data-search="gta 6 rockstar games"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=500&q=80" alt="Evento de games"><span class="tag">GAMES</span><h3>GTA 6 Will Reportedly Come To PC Much Earlier Than Expected</h3></article>
+        <article class="news-card" data-search="gamespot 10/10 reviews"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=500&q=80" alt="Videogame retrô"><span class="tag">GAMES</span><h3>Every GameSpot 10/10 Review Score</h3></article>
+        <article class="news-card" data-search="nintendo switch games"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&q=80" alt="Jogo de aventura"><span class="tag">GAMES</span><h3>Novidades e destaques do mundo dos games</h3></article>
+      </div>
+      <p class="empty-state" hidden>Nenhum resultado encontrado. Tente outra pesquisa.</p>
+    </section>
+  </main>
+
+  <dialog id="accountDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-content">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Fechar">×</button>
+      <div class="brand-dialog">Fand<span>♥</span>m</div>
+      <h2 id="dialogTitle">Entre na Fandom</h2>
+      <p id="dialogDescription">Entre para salvar suas wikis favoritas e acompanhar suas comunidades.</p>
+
+      <form id="loginForm" class="account-form">
+        <label>E-mail<input id="loginEmail" type="email" placeholder="voce@exemplo.com" autocomplete="email" required></label>
+        <label>Senha<input id="loginPassword" type="password" placeholder="Digite sua senha" autocomplete="current-password" minlength="6" required></label>
+        <button class="solid-btn dialog-submit" type="submit">Entrar</button>
+        <small>Ainda não tem conta? <button class="text-action" id="showSignup" type="button">Cadastre-se</button></small>
+      </form>
+
+      <form id="signupForm" class="account-form" hidden>
+        <label>Nome de usuário<input id="signupName" type="text" placeholder="Como quer ser chamado?" autocomplete="username" minlength="3" maxlength="24" required></label>
+        <label>E-mail<input id="signupEmail" type="email" placeholder="voce@exemplo.com" autocomplete="email" required></label>
+        <label>Senha<input id="signupPassword" type="password" placeholder="Crie uma senha (mín. 6 caracteres)" autocomplete="new-password" minlength="6" required></label>
+        <label>Confirmar senha<input id="signupConfirm" type="password" placeholder="Digite a senha novamente" autocomplete="new-password" minlength="6" required></label>
+        <button class="solid-btn dialog-submit" type="submit">Criar conta</button>
+        <small>Já tem uma conta? <button class="text-action" id="showLogin" type="button">Entrar</button></small>
+      </form>
+      <small class="security-note">Protótipo local para estudo. Para uso real, conecte a autenticação a um servidor seguro.</small>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <footer>Projeto demonstrativo inspirado no layout da captura de tela. Não é o site oficial da Fandom.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
